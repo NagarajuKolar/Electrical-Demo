@@ -1,0 +1,311 @@
+.navbar-container {
+    background-color: #012269;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+
+.headerpic {
+    height: 65px;
+    width: 200px;
+    margin-left: 80px;
+    outline: 2px solid rgb(23, 21, 21);
+    outline-offset: -3px;
+    border-radius: 6px;
+}
+
+/* .headerpic:hover{
+    border: 2px solid black;
+} */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-pills {
+    align-items: center;
+    margin-right: 80px;
+    font-size: 1.2rem;
+    gap: 20px;
+
+}
+
+.nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background-color: rgba(83, 165, 236, 0.3);
+    color: white;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    color: white !important;
+}
+
+.dropdown {
+    color: white;
+}
+
+.nav-item.dropdown:hover .dropdown-menu,
+.nav-item.dropdown .dropdown-menu:hover {
+    display: block;
+    margin-top: 0;
+    background-color: rgba(208, 198, 198, 0.4);
+    backdrop-filter: blur(20px); 
+    z-index: 999999;
+}
+
+.dropdown-item {
+    color: black;
+    font-size: medium;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 10px 25px;
+}
+
+.down-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.nav-item.dropdown:hover .down-icon {
+    transform: rotate(180deg);
+}
+
+.downloadicon {
+  position: fixed;
+  top: 30%;
+  right: 0;
+    background-color: #012269;
+  z-index: 1000; 
+    color: orange;
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 30px 0 0 30px;
+  cursor: pointer;
+}
+
+.d-icon{
+  font-size: 38px;
+  margin-right: 0;
+  color: white;  
+  padding: 10px;
+
+}
+.download-text {
+  display: none;
+}
+
+.downloadicon:hover .download-text {
+  display: inline;
+}
+
+.d-icon{
+    opacity: 0;
+    transform: scale(0.5); 
+    animation:blink 1s ease-in-out  infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(0.9);
+  }
+}
+
+
+.whatsappicon
+{
+ position: fixed;
+  top: 80%;
+  right: 3%;
+  z-index: 1000; 
+  padding: 6px 8px;
+  cursor: pointer;
+  background-color: rgb(78 161 78);
+  border-radius: 50%;
+
+}
+.w-icon{
+height: 30px;
+width: 30px;
+  margin-right: 0;
+  color: rgb(255, 255, 255);  
+}
+
+.whatsapp-container{
+    position: fixed;
+    bottom: 150px;
+    right: 60px;
+    width: 320px;
+    background: #fbfbfb;
+    border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: sans-serif;
+  z-index: 9999
+
+}
+.w-box{
+    padding: 10px;
+}
+.w-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(161, 155, 155);
+    
+}
+.w-heading p{
+    font-size: 24px;
+    font-family: sans-serif;
+font-weight: 700;
+margin: 0;
+}
+.w-close {
+  cursor: pointer;
+  color: #888;
+  font-size: 24px;
+  font-weight: 800;
+}
+.w-input {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.w-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.send-icon{
+    color: green;
+    cursor: pointer;
+    font-size: 28px;
+}
+.w-input a{
+    margin-left: 5px;
+}
+.w-body{
+    padding: 10px 0;
+    font-size: 15px;
+   
+}
+.w-body p{
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+
+
+.go-to-top
+{
+ position: fixed;
+  top: 90%;
+  right: 3.10%;
+  z-index: 1000; 
+  padding: 6px 8px;
+  cursor: pointer;
+  background-color: #1a4ebd;
+  border-radius: 50%;
+
+}
+.gotop-icon{
+  height: 24px;
+  width: 28px;
+  margin-right: 0;
+  color: rgb(255, 255, 255);  
+}
+
+@media (max-width: 768px) {
+    header{
+        display: flex;
+          justify-content: space-between !important;
+        align-items: center; 
+    }
+    .headerpic {
+    height: 60px;
+    width: 180px;
+        margin-left: 20px;
+    outline: 2px solid rgb(23, 21, 21);
+    outline-offset: -3px;
+    border-radius: 6px;
+}
+.whatsappicon
+{
+ position: fixed;
+  top: 80%;
+  right: 3%;
+  z-index: 1000; 
+  padding: 6px 10px;
+
+
+}
+.w-icon{
+height: 30px;
+width: 30px;
+}
+.go-to-top
+{
+  padding: 5px 10px;
+}
+.gotop-icon{
+  height: 22px;
+  width: 22px;
+}
+
+.nav-pills.open {
+        display: flex;
+    }
+
+    .nav-pills {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: -80px;
+        width: 75%;
+        background-color: #012269;
+        display: none;
+        z-index: 1000;
+        padding: 20px;
+    }
+
+    .nav-pills.open {
+        display: flex;
+    }
+
+    .navbar-toggler {
+        background: none;
+        border: none;
+        color: white;
+        z-index: 1100;
+    }
+
+    .nav-link {
+        width: 100%;
+       
+    }
+}

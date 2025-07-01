@@ -1,0 +1,71 @@
+.adress{
+    gap: 100px;
+}
+.phone h5,
+.adress h5{
+  color: #012269;
+}
+
+.phone h6,
+.adress h6{
+  color: #484c53;
+}
+
+.inputs-field {
+  border: 2px solid #15317e; 
+  border-radius: 8px;
+  font-weight: 500;
+  color: #3f3d3d;
+}
+.inputs-field::placeholder {
+  color: #a0a0a0;
+  font-weight: 500;
+}
+.form-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+   color: #3f3d3d;
+}
+.sub-btn{
+    background-color: #15317e;
+}
+.sub-btn:hover{
+    background-color: rgb(73, 154, 73);
+}
+.fade-content{
+    opacity:0;
+    transform: translateY(-80px);
+    animation: fadeout 1.5s ease-out forwards;  
+}
+@keyframes fadeout{
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-form {
+  opacity: 0;
+  transform: scale(0.5); 
+  animation: zoomInNear 2s ease-out forwards;
+}
+
+@keyframes zoomInNear {
+  to {
+    opacity: 1;
+    transform: scale(1); 
+  }
+}
+
+@media (max-width: 992px){
+    .adress{
+        display:flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .fade-content{
+        padding: 30px;
+    }
+}
+
+
+

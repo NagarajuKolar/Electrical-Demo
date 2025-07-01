@@ -1,0 +1,70 @@
+.cable-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem; 
+  width: 85%;
+  margin-top: 50px;
+  margin-left: 12px;
+
+}
+.cable-buttons .btn{
+    background-color: #012269;
+      color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 0px;
+  font-size: 1.1rem;
+  font-weight: 500;
+    
+} 
+.cable-buttons .btn.active-btn {
+  background-color: rgb(59, 110, 59) ;
+  color: white ;
+  box-shadow: none; 
+}
+.cab-row{
+background-color: #f1f4fe;
+width: 100%;
+margin: 0 auto;
+text-align: justify;
+}
+.p-img{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.images-pro img{
+      width: 245px;
+    height: 200px;
+    margin: 5px;
+    
+}
+.images-pro {
+    text-align: center;
+    margin-bottom: 70px;
+}
+.enq-btn,
+.enq-btn:hover {
+  margin-top: 10px;
+  padding: 6px 14px;
+  background-color: #012269;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.content{
+  margin-bottom: 35px;
+}
+.content h5{
+  color: #012269;
+  margin-bottom: 5px;
+}
+.content p{
+  font-size: 18px;
+  color: rgb(87, 91, 91);
+  line-height: 1.7;
+}
+

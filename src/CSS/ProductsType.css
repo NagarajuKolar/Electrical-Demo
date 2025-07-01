@@ -1,0 +1,28 @@
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .cable-image img {
+    margin-top: 20px;
+  }
+  .cab-row{
+    display: flex;
+    flex-direction: column !important;
+    width: 100%;
+  }
+  .cab-row .col-md-3{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+.cable-block .col-md-7{
+    width: 70%;
+}
+.cable-block .col-md-4{
+    width: 30%;
+}
+.ms-md-4{
+  margin-left: 0px !important;
+}
+.row .cable-block{
+    width: 100%;
+}
+}

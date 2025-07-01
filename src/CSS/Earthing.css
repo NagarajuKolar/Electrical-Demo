@@ -1,0 +1,141 @@
+
+.cable-block {
+margin-top: 15px;
+margin-bottom: 45px;
+}
+.cable-text h5{
+    color: #012269;
+  margin-bottom: 5px;
+}
+.cable-text p{
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: justify;
+  color: rgb(87, 91, 91);
+}
+
+.p-elec{
+  background-color: #dceceef5;
+}
+.cable-image{
+  text-align: center;
+}
+.cable-image img {
+      width: 245px;
+    height: 200px;
+    margin: 8px;
+}
+@media (max-width: 768px) {
+  .cable-block {
+    flex-direction: column;
+  }
+
+  .cable-text {
+    order: 1;
+  }
+
+  .cable-image {
+    order: 2;
+  }
+  .cable-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cable-image img {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+}
+
+
+.enq-container{
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999;
+}
+.enq-box{
+  background-color: aliceblue;
+  width: 550px;
+  max-width: 500px;
+  height: auto;
+  padding: 25px;
+    border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  outline: 2px solid #d3d3d3; 
+  outline-offset: -10px;  
+}
+.enq-heading{
+  position: relative;        
+  text-align: center;
+  padding: 10px 10px;
+  color: #012269;
+  font-size: 24px;
+  font-weight: bold;
+  color: #012269;
+}
+.enq-heading h3{
+  margin: 0;
+}
+.enq-icon{
+  position: absolute;
+  right: 20px;
+  top: 35%;
+  cursor: pointer;
+}
+.enq-form label{
+  color: #012269;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0px;
+}
+.enq-form input,
+.enq-form textarea{
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid #012269; 
+
+}
+
+.enq-form input::placeholder,
+.enq-form textarea::placeholder{
+  padding: 3px 5px;
+  font-size: 20px;
+}
+
+
+.enq-btns {
+  justify-content: space-around;
+  margin-top: 15px;
+  border-radius: 10px;
+
+}
+.bt-send,
+.bt-send:hover
+{
+  background-color: #012269;
+  color: white;
+}
+.bt-close,
+.bt-close:hover{
+  background-color: gold;
+  color: black;
+
+}
+
+@media (max-width:576px) {
+  .enq-box{
+  width: 500px;
+  max-width: 500px;
+  height: auto;
+  
+}
+}
