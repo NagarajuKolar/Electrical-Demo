@@ -1,43 +1,46 @@
 import '../CSS/Earthing.css'
-import bannerimg from '../assets/Lightpole.png'
-import pole1 from '../assets/pole1.webp'
-import pole2 from '../assets/pole2.jpg'
-
+import bannerimg from '../assets/type33.jpg'
+import yogamat1 from '../assets/mat11.jpeg'
+import yogamat2 from '../assets/mat22.jpeg'
+import band1 from '../assets/band1.jpg'
+import band2 from '../assets/band2.jpeg'
 import EnquiryForm from './EnquiryForm'
 import ProductsType from './ProductsType'
 
 function Lightpolings() {
-  const polingData = [
-    {
-      id: 'customisedPoles',
-      label: 'Customised Poles',
-      content: [
-        {
-          title: 'Customised Poles',
-          text: `Customized poles for standard light poles are tailored to meet specific height, design, and load-bearing requirements for 
-        various applications. These poles can be made from steel, aluminum, or reinforced concrete, depending on the environmental conditions 
-        and aesthetic preferences. They offer flexibility in terms of finish options, such as galvanized or powder-coated surfaces, to enhance
-        durability and appearance. Customized poles ensure proper support for street lighting, security lights, or decorative outdoor 
-        lighting. These poles can be engineered for ease of installation and maintenance, ensuring long-term performance.`
-        }
-      ],
-      images: [pole1]
-    },
-    {
-      id: 'Solarmodule',
-      label: 'Solar Module Mounting Systems',
-      content: [
-        {
-          title: 'AluminumStrips Cable Tray',
-          text: `Solar module mounting systems for standard light poles are designed to support solar panels for street and area lighting.These systems
-           typically include brackets and mounting arms made from durable, corrosion- resistant materials like galvanized steel or aluminum.The mounting structure ensures proper panel orientation to maximize solar energy absorption.Adjustable mounts allow flexibility in panel positioning, optimizing performance throughout the year.These systems integrate 
-          seamlessly with existing light poles, providing an eco - friendly, off - grid power solution for outdoor lighting.`
-        },
-      ],
-      images: [pole2]
-    }
 
-  ];
+  const yogaEquipmentData = [
+  {
+    id: 'yogamats',
+    label: 'Yoga Mats',
+    content: [
+      {
+        title: 'Eco-Friendly TPE Yoga Mat',
+        text: `These mats are made from Thermoplastic Elastomer (TPE), offering a non-slip surface and excellent cushioning. They are lightweight, biodegradable, and ideal for eco-conscious users. Perfect for daily yoga, stretching, and floor exercises.`
+      },
+      {
+        title: 'Extra Thick Foam Yoga Mat',
+        text: `Thicker mats offer additional joint protection and comfort, especially for beginners or those with sensitive knees. These mats are made from high-density NBR or foam and provide excellent grip and support during poses.`
+      }
+    ],
+    images: [yogamat1, yogamat2] // Replace with actual image imports
+  },
+  {
+    id: 'resistancebands',
+    label: 'Resistance Bands',
+    content: [
+      {
+        title: 'Loop Resistance Bands',
+        text: `Loop bands are great for lower body workouts, glute activation, and physiotherapy. Available in different resistance levels, they are compact and portable — perfect for warmups, home workouts, and rehab exercises.`
+      },
+      {
+        title: 'Tube Resistance Bands with Handles',
+        text: `These bands come with grip handles, door anchors, and adjustable resistance options. They simulate free-weight workouts and can be used for chest presses, curls, rows, and shoulder work. Ideal for full-body toning and strength training.`
+      }
+    ],
+    images: [band1, band2] // Replace with actual image imports
+  }
+];
 
 
 
@@ -46,10 +49,10 @@ function Lightpolings() {
     <>
 
       <ProductsType
-        title="Standard Light poles"
-        Data={polingData}
+        title="Yoga Accessories"
+        Data={yogaEquipmentData}
         header={bannerimg}
-        defaultType='customisedPoles'
+        defaultType='yogamats'
       />
 
 

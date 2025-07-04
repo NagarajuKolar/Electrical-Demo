@@ -23,10 +23,10 @@ function App() {
         <Route path='/about' element={<Aboutus />}></Route>
         <Route path='/contact' element={<Contactus />}></Route>
         <Route path='/products' element={<Products/>}></Route>
-        <Route path='/cabletrays' element={<Cabletrays/>}></Route>
-         <Route path='/earthmaterial' element={<Earthing/>}></Route>
-         <Route path='/lightpolings' element={<Lightpolings/>}></Route>
-        <Route path='/gratings' element={<Gratings/>}></Route>
+        <Route path='/cardiomachines' element={<Cabletrays/>}></Route>
+         <Route path='/strengthequipment' element={<Earthing/>}></Route>
+         <Route path='/yoga' element={<Lightpolings/>}></Route>
+        <Route path='/outdoor' element={<Gratings/>}></Route>
       </Routes>
       <Footer />
 

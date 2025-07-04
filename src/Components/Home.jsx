@@ -1,43 +1,45 @@
 import React from 'react'
 import Navbar from './Navbar'
 import '../CSS/Home.css'
-import bannerimg from '../assets/banner2.png'
-import aboutimg from '../assets/homeabout.png'
+import bannerimg from '../assets/banner1.png'
+import aboutimg from '../assets/aboutban33.jpg'
 import { useState } from 'react'
+
 import { Link } from 'react-router-dom'
-import tray1 from '../assets/cabletray1.jpg'
-import tray2 from '../assets/cable-tray-accessories.jpg'
-import tray3 from '../assets/CTsupport-.jpg'
-import tray4 from '../assets/GI-Earthing-Strip-Plate.jpg'
-import tray5 from '../assets/AL strips.jpg'
-import tray6 from '../assets/gi-wire-485.jpg'
-import tray7 from '../assets/chainlink.jpg'
-import tray8 from '../assets/angle pole.jpg'
-import tray9 from '../assets/solarpoles.jpg'
-import service1 from '../assets/service1.png'
-import service2 from '../assets/service2.webp'
-import service3 from '../assets/service3.webp'
-import client1 from '../assets/apollosteel.png'
-import client2 from '../assets/ushamartin.jpeg'
-import client3 from '../assets/tata-steel.webp'
-import client4 from '../assets/Sail.png'
-import client5 from '../assets/adani.png'
-import client6 from '../assets/mukund.png'
-import client7 from '../assets/msp group.webp'
-import client8 from '../assets/jindal.svg'
+import tray1 from '../assets/treadMill.webp'
+import tray2 from '../assets/excerise.webp'
+import tray3 from '../assets/dumbells.webp'
+import tray4 from '../assets/powerack.webp'
+import tray5 from '../assets/yogamat.webp'
+import tray6 from '../assets/bands.jpg'
+import tray7 from '../assets/pullup.png'
+import tray8 from '../assets/battlerope.webp'
+import service1 from '../assets/service1.jpeg'
+import service2 from '../assets/service22.webp'
+import service3 from '../assets/service3.jpeg'
+import client1 from '../assets/dec.webp'
+import client2 from '../assets/cult.svg'
+import client3 from '../assets/MB.png'
+import client4 from '../assets/nike.png'
+import client5 from '../assets/adidas.png'
+import client6 from '../assets/gold.svg'
+import client7 from '../assets/reebok.jpeg'
+import client8 from '../assets/yogo.png'
+import client9 from '../assets/fitness.png'
+
 
 function Home() {
     const [selectedCategory, setSelectedCategory] = useState('ALL');
-    const productData = [
-        { category: "Cable trays", img: tray1, title: "Ladder Type Tray", link: "/cabletrays" },
-        { category: "Cable trays", img: tray2, title: "Perforated Tray", link: "/cabletrays"  },
-        { category: "Cable trays", img: tray3, title: "Wire Mesh Tray", link: "/cabletrays"  },
-        { category: "Earth Material", img: tray4, title: "Earthing Rods" , link: "/earthmaterial" },
-        { category: "Earth Material", img: tray5, title: "Chemical Earthing", link: "/earthmaterial"  },
-        { category: "Gratings", img: tray6, title: "New Year Card" , link: "/gratings" },
-        { category: "Gratings", img: tray7, title: "Festival Greeting", link: "/gratings"  },
-        { category: "Light pole", img: tray8, title: "Street Light Pole" , link: "/lightpolings" },
-    ];
+const productData = [
+  { category: "Cardio Machines", img: tray1, title: "Treadmill", link: "/cardiomachines" },
+  { category: "Cardio Machines", img: tray2, title: "Exercise Bike", link: "/cardiomachines" },
+  { category: "Strength Equipment", img: tray3, title: "Adjustable Dumbbells", link: "/strengthequipment" },
+  { category: "Strength Equipment", img: tray4, title: "Power Rack", link: "/strengthequipment" },
+  { category: "Yoga Accessories", img: tray5, title: "Yoga Mat", link: "/yoga" },
+  { category: "Yoga Accessories", img: tray6, title: "Resistance Bands", link: "/yoga" },
+  { category: "Outdoor Fitness", img: tray7, title: "Pull-Up Station", link: "/outdoor" },
+  { category: "Outdoor Fitness", img: tray8, title: "Battle Rope", link: "/outdoor" },
+];
     const uniqueCategorySet = new Set(productData.map(item => item.category));
     const uniqueCategories = [...uniqueCategorySet];
 
@@ -48,8 +50,7 @@ function Home() {
             <div style={{ paddingTop: "70px" }}>
                 <div className="container-fluid banner " style={{ backgroundImage: `url(${bannerimg})` }}>
                     <div className="banner-content ">
-                        <h1 className='ban-head'>Electrical Solutions & Supply to Residencials,
-                            Commercial & Industries</h1>
+                        <h1 className='ban-head'>Fitness Gear Engineered for Performance – Built for Every Body..</h1>
                         <a href="/about" className="btn mt-4 read-more">
                             Read More
                         </a>
@@ -63,12 +64,12 @@ function Home() {
                     <div className="col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
                         <img src={aboutimg} alt="" className="img-fluid about-img" />
                     </div>
-                    <div className="col-md-6 col-sm-12 mt-5 abt-cont ps-md-5 ps-2">
+                    <div className="col-md-6 col-sm-12 mt-1 abt-cont ps-md-5 ps-2">
                         <h2 className='text-muted'>welcome</h2>
-                        <h1 > Shafeena< span className='text-warning'>  Electricals</span> </h1>
-                        <p>Shafeena Electricals is your trusted partner for high-quality electrical solutions tailored to industrial, commercial, and residential needs.
-                            Our dedication to excellence ensures innovative, safe, and efficient electrical systems that power your projects with confidence.
-                            Discover the difference with Shafeena Electricals – where your satisfaction is our priority.</p>
+                        <h1 >  FitHub Pro < span className='text-warning'> Gear</span> </h1>
+                        <p><strong> FitHub Pro Equipment</strong>  is your trusted partner in delivering cutting-edge gym and fitness equipment for homes, studios, 
+                        and commercial centers. Our mission is to empower every fitness journey with tools that combine performance, comfort, and reliability. 
+                           <br></br>From strength training to yoga essentials, we provide quality gear built to push your limits and help you reach your goals. With FitCore, fitness isn’t just a routine — it’s a lifestyle</p>
                     </div>
                 </div>
             </div>
@@ -211,19 +212,19 @@ function Home() {
                     <div className="col-md-4  col-sm-6 mb-4">
                         <div className="service-box">
                             <img src={service1} className="service-image" alt="Cable Tray Types" />
-                            <h5 className="service-title">Commercial Services</h5>
+                            <h5 className="service-title">Home Gym Setup</h5>
                         </div>
                     </div>
                     <div className="col-md-4 col-sm-6 mb-4">
                         <div className="service-box">
                             <img src={service2} className="service-image" alt="Cable Tray Types" />
-                            <h5 className="service-title">Residential Services</h5>
+                            <h5 className="service-title">Commercial Gym Planning</h5>
                         </div>
                     </div>
                     <div className="col-md-4 col-sm-6 mb-4">
                         <div className="service-box">
                             <img src={service3} className="service-image" alt="Cable Tray Types" />
-                            <h5 className="service-title">Industrial services</h5>
+                            <h5 className="service-title">Gym Flooring & Installation</h5>
                         </div>
                     </div>
 

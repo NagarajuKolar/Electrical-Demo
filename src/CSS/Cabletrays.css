@@ -9,7 +9,7 @@
 
 }
 .cable-buttons .btn{
-    background-color: #012269;
+    background: linear-gradient(90deg, #595866, #47864a, #4c7984);
       color: white;
   border: none;
   border-radius: 12px;

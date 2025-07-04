@@ -1,5 +1,5 @@
 .footer{
-    background-color:#012269 ;
+        background: linear-gradient(90deg, #6562a9, #375087, #533e5f);
     color: white;
     width: 100%;
     min-height: 100%;
@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 .head-img{
-    width:14rem;
+    width:15rem;
     padding-bottom: 10px;
 }
 .quicklinks li a{

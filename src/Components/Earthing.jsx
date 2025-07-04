@@ -1,57 +1,46 @@
 import React from 'react'
 import '../CSS/Earthing.css'
-import bannerimg from '../assets/Earth.png'
+import bannerimg from '../assets/type22.jpg'
 import aboutimg from '../assets/about2image.jpg'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import strip1 from '../assets/strip1.jpg'
-import strip2 from '../assets/strip2.webp'
-import strip3 from '../assets/strip3.jpeg'
+import dumbbell1 from '../assets/dumb1.webp'
+import dumbbell2 from '../assets/dumb2.jpeg'
+import rack1 from '../assets/power1.webp'
+import rack2 from '../assets/power2.jpeg'
 import ProductsType from './ProductsType'
 
 function Earthing() {
-const earthingData = [
+const strengthEquipmentData = [
   {
-    id: 'GIstrips',
-    label: 'G.I. Strips & Plates',
+    id: 'adjustabledumbbells',
+    label: 'Adjustable Dumbbells',
     content: [
       {
-        title: 'G.I. Strips & Plates',
-        text: `G.I. (Galvanized Iron) strips and plates are widely used for electrical grounding systems due to their durability and resistance to corrosion. These strips and plates are made by coating iron with a layer of zinc,
-        providing enhanced protection against environmental factors. They are commonly used in earthing applications for buildings, 
-        electrical installations, and substations. The flexibility of G.I. strips allows for easy installation, 
-        while the strength of G.I. plates ensures long-lasting performance. G.I. materials are highly cost-effective and require minimal maintenance.`
-      }
-    ],
-    images: [strip1]
-  },
-  {
-    id: 'ALwires',
-    label: 'Aluminum Strips',
-    content: [
-      {
-        title: 'Aluminum Strips',
-        text: `Aluminum strips are versatile, lightweight, and corrosion-resistant materials used in various applications. They are commonly used in 
-        the electrical industry for grounding and bonding purposes due to their excellent conductivity. The strips are available in various thicknesses and widths to suit different needs. 
-        Anodized aluminum strips offer enhanced durability and resistance to environmental factors. These strips are also used in
-        construction, automotive, and manufacturing industries for their strength and flexibility.`
+        title: 'Selectorized Dumbbells',
+        text: `Selectorized dumbbells allow you to quickly adjust weights using a dial or pin system. They are space-saving and ideal for home gyms. With a single pair, you can switch between multiple weight levels, making them perfect for full-body strength workouts and progressive overload training.`
       },
-    ],
-    images: [strip2]
-  },
-  {
-    id: 'GIwire',
-    label: 'GI Wire',
-    content: [
       {
-        title: 'GI Wire',
-        text: `Galvanized Iron (GI) wire is a durable, corrosion-resistant wire coated with a layer of zinc to protect against rust. 
-        It is commonly used in fencing, electrical wiring, and construction applications. The galvanization process enhances the wires 
-        lifespan, especially in harsh outdoor environments.GI wire is available in various gauges, offering flexibility for 
-        different uses.It is a cost- effective material known for its strength, flexibility, and resistance to environmental damage.`
+        title: 'Steel Handle Adjustable Dumbbells',
+        text: `These dumbbells use a traditional spin-lock or plate-load mechanism. They offer great durability and a secure grip due to their knurled steel handles. Ideal for strength training enthusiasts who prefer a classic feel and customizable weight combinations.`
       }
     ],
-    images: [strip3]
+    images: [dumbbell1, dumbbell2] 
+  },
+  {
+    id: 'powerrack',
+    label: 'Power Rack',
+    content: [
+      {
+        title: 'Full Power Rack',
+        text: `Full power racks offer a complete and safe setup for heavy lifting. They include safety bars, adjustable J-hooks, and multiple attachments for squats, bench presses, and pull-ups. Sturdy steel frames ensure stability and user safety during high-load workouts.`
+      },
+      {
+        title: 'Half Rack with Plate Storage',
+        text: `Half racks are compact yet powerful setups, perfect for home gyms. They provide vertical bar storage, adjustable height levels, and side pegs for storing weight plates. Ideal for performing compound lifts while saving space without sacrificing stability.`
+      }
+    ],
+    images: [rack1, rack2] 
   }
 ];
 
@@ -60,10 +49,10 @@ const earthingData = [
         <>
 
       <ProductsType
-        title="Earthing Materials"
-        Data={earthingData}
+        title="Strength Equipment"
+        Data={strengthEquipmentData}
         header={bannerimg}
-        defaultType='GIstrips'
+        defaultType='adjustabledumbbells'
       />
 
 

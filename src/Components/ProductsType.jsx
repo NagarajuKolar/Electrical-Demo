@@ -3,7 +3,7 @@ import { useState } from 'react'
 import '../CSS/ProductsType.css'
 import { Link } from 'react-router-dom'
 import EnquiryForm from './EnquiryForm'
-function ProductsType({title,header,Data,defaultType}) {
+function ProductsType({title,header,Data,defaultType,loc}) {
       const [showform, setshowform] = useState(false)
       const opencloseform = () => {
         setshowform(!showform)
@@ -30,7 +30,7 @@ function ProductsType({title,header,Data,defaultType}) {
                     <div className="banner-content ">
                         <h1 className='about-head'>{title}</h1>
                         <p className='about-p'> <Link to="/" className='text-decoration-none'>Home </Link>
-                            <span className='fw-bold text-white'>  |  </span>  <Link to='/' className='text-decoration-none'> {title}</Link></p>
+                            <span className='fw-bold text-white'>  |  </span>  <Link to={loc} className='text-decoration-none'> {title}</Link></p>
                     </div>
                 </div>
             </div>

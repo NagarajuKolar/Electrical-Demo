@@ -1,30 +1,30 @@
 import React from 'react'
-import bannerimg from '../assets/product.png'
+import bannerimg from '../assets/prodban.avif'
 import aboutimg from '../assets/about2image.jpg'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import tray1 from '../assets/cabletray1.jpg'
-import tray2 from '../assets/cable-tray-accessories.jpg'
-import tray3 from '../assets/CTsupport-.jpg'
-import tray4 from '../assets/GI-Earthing-Strip-Plate.jpg'
-import tray5 from '../assets/AL strips.jpg'
-import tray6 from '../assets/gi-wire-485.jpg'
-import tray7 from '../assets/chainlink.jpg'
-import tray8 from '../assets/angle pole.jpg'
+import tray1 from '../assets/treadMill.webp'
+import tray2 from '../assets/excerise.webp'
+import tray3 from '../assets/dumbells.webp'
+import tray4 from '../assets/powerack.webp'
+import tray5 from '../assets/yogamat.webp'
+import tray6 from '../assets/bands.jpg'
+import tray7 from '../assets/pullup.png'
+import tray8 from '../assets/battlerope.webp'
 
 function Products() {
   const [selectedCategory, setSelectedCategory] = useState('ALL');
+const productData = [
+  { category: "Cardio Machines", img: tray1, title: "Treadmill", link: "/cardiomachines" },
+  { category: "Cardio Machines", img: tray2, title: "Exercise Bike", link: "/cardiomachines" },
+  { category: "Strength Equipment", img: tray3, title: "Adjustable Dumbbells", link: "/strengthequipment" },
+  { category: "Strength Equipment", img: tray4, title: "Power Rack", link: "/strengthequipment" },
+  { category: "Yoga Accessories", img: tray5, title: "Yoga Mat", link: "/yoga" },
+  { category: "Yoga Accessories", img: tray6, title: "Resistance Bands", link: "/yoga" },
+  { category: "Outdoor Fitness", img: tray7, title: "Pull-Up Station", link: "/outdoor" },
+  { category: "Outdoor Fitness", img: tray8, title: "Battle Rope", link: "/outdoor" },
+];
 
-  const productData = [
-    { category: "Cable trays", img: tray1, title: "Ladder Type Tray", link: "/products" },
-    { category: "Cable trays", img: tray2, title: "Perforated Tray" },
-    { category: "Cable trays", img: tray3, title: "Wire Mesh Tray" },
-    { category: "Earth Material", img: tray4, title: "Earthing Rods" },
-    { category: "Earth Material", img: tray5, title: "Chemical Earthing" },
-    { category: "Greetings", img: tray6, title: "New Year Card" },
-    { category: "Greetings", img: tray7, title: "Festival Greeting" },
-    { category: "Light pole", img: tray8, title: "Street Light Pole" },
-  ];
 
   const uniqueCategorySet = new Set(productData.map(item => item.category));
   const uniqueCategories = [...uniqueCategorySet];
