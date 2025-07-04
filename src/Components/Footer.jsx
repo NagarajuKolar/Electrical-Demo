@@ -13,7 +13,7 @@ function Footer() {
 
           <div className="col-md-3 col-sm-6 mb-2">
             <img src={headerpic} alt="" className='img-fluid head-img ps-md-3' /><br />
-            <p className='fs-5 footlinks ps-md-3'>
+            <p className='fs-6 footlinks ps-md-3'>
               Subscribe to our mailing list to <br />
               receive <br />
               new updates and special offers:
@@ -21,8 +21,8 @@ function Footer() {
           </div>
 
           <div className="col-md-3 col-sm-6 mb-2">
-            <h3 className='text-warning mb-2  Links-head fw-bold ps-md-3'>QUICK LINKS</h3>
-            <div className='quicklinks fs-5'>
+            <h4 className='text-warning mb-2  Links-head fw-bold ps-md-3'>QUICK LINKS</h4>
+            <div className='quicklinks fs-6'>
               <li><Link to="/" >Home</Link> </li>
               <li><Link to="/about" >About Us</Link> </li>
               <li><Link to="/products" >Products</Link> </li>
@@ -32,8 +32,8 @@ function Footer() {
           </div>
 
           <div className="col-md-3 col-sm-6 mb-2">
-            <h2 className='text-warning mb-2 Links-head fw-bold ps-md-3'>CONTACT</h2>
-            <div className='contact-item mt-2 footlinks fs-5 ps-md-3'>
+            <h4 className='text-warning mb-2 Links-head fw-bold ps-md-3'>CONTACT</h4>
+            <div className='contact-item mt-2 footlinks fs-6 ps-md-3'>
               <CiLocationOn className='icon' />
               <a
                 href="https://www.google.com/maps?q=B8/714, Lig Venture-2, 4th Phase, KPHB Colony, Kukatpally, Hyderabad, Telangana-500085"
@@ -47,7 +47,7 @@ function Footer() {
               </a>
             </div>
 
-            <div className='contact-item fs-5 ps-md-3'>
+            <div className='contact-item fs-6 ps-md-3'>
               <FiPhone className='icon' />
               <div >
                 <p><a className="text-decoration-none text-white" href="tel:+918074936711">+91 8074936711</a></p>
@@ -55,7 +55,7 @@ function Footer() {
               </div>
             </div>
 
-            <div className='contact-item fs-5 ps-md-3'>
+            <div className='contact-item fs-6 ps-md-3'>
               <MdEmail className='icon' />
               <a href="mailto:kolarnaga00@gmail.com" className="text-decoration-none text-white">
                 kolarnaga00@gmail.com
@@ -65,14 +65,13 @@ function Footer() {
           </div>
 
           <div className="col-md-3 col-sm-6 mb-2">
-            <h3 className='text-warning mb-2 Links-head fw-bold ps-md-3'>ROUTE MAP</h3>
+            <h4 className='text-warning mb-2 Links-head fw-bold ps-md-3'>ROUTE MAP</h4>
             <div className='ps-md-3'>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.2875749038!2d78.39170874169413!3d17.471251903585372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb913cfd05700f%3A0x4a628d564e87d774!2s630%20LIG%20Flats%20Venture%202!5e0!3m2!1sen!2sin!4v1750847688810!5m2!1sen!2sin"
-                style={{ width: '100%', height: '110px' }}
-                allowFullScreen="" loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15205.050572651295!2d77.45667074689217!3d17.685048682057694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcecb78149d0b59%3A0xc766c8061aa57ede!2sMadgi%2C%20Telangana!5e0!3m2!1sen!2sin!4v1751636334403!5m2!1sen!2sin" 
+                  style={{ width: '100%', height: '110px' }}
+                 allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <h3 className='text-warning mb-2 Links-head  mt-3 fw-bold ps-md-3'>SOCIAL MEDIA</h3>
+            <h4 className='text-warning mb-2 Links-head  mt-3 fw-bold ps-md-3'>SOCIAL MEDIA</h4>
             <div className="d-flex media ps-md-3">
               <Link to="https://facebook.com" className="text-white media-icons ">
                 <FaFacebookF />

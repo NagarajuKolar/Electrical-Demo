@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import '../CSS/Navbar.css'
-import { Link,NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import headerpic from '../assets/navlog.jpg'
 import { FaChevronDown } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
@@ -64,20 +64,20 @@ function Navbar() {
 
                     <ul className={`nav nav-pills ${Open ? 'open' : ''}`}>
                         <li className="nav-item">
-                            <NavLink to="/" className="nav-link "onClick={() => setOpen(false)}>Home</NavLink >
+                            <NavLink to="/" className="nav-link " onClick={() => setOpen(false)}>Home</NavLink >
                         </li>
 
                         <li className="nav-item">
-                            <NavLink to="/about" className="nav-link"onClick={() => setOpen(false)}>About Us</NavLink >
+                            <NavLink to="/about" className="nav-link" onClick={() => setOpen(false)}>About Us</NavLink >
                         </li>
                         <li className="nav-item dropdown">
                             <NavLink to="/products" className="nav-link " role="button">
                                 Products <FaChevronDown className="down-icon mb-1" />
                             </NavLink>
                             <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" to="/cardiomachines"onClick={() => setOpen(false)}>Cardio Machines</Link></li>
-                                <li><Link className="dropdown-item" to="/strengthequipment"onClick={() => setOpen(false)}>Strength EquipMent</Link></li>
-                                <li><Link className="dropdown-item" to="/yoga"onClick={() => setOpen(false)}>Yoga Accessories</Link></li>
+                                <li><Link className="dropdown-item" to="/cardiomachines" onClick={() => setOpen(false)}>Cardio Machines</Link></li>
+                                <li><Link className="dropdown-item" to="/strengthequipment" onClick={() => setOpen(false)}>Strength EquipMent</Link></li>
+                                <li><Link className="dropdown-item" to="/yoga" onClick={() => setOpen(false)}>Yoga Accessories</Link></li>
                                 <li><Link className="dropdown-item" to="/outdoor" onClick={() => setOpen(false)}>outdoor Fitness</Link></li>
                             </ul>
                         </li>
@@ -88,14 +88,13 @@ function Navbar() {
                     </ul>
                 </header>
             </div>
-
-            <div className='downloadicon '>
-                <GoDownload className=' d-icon' />
-                <span className="download-text">Download Brochure</span>
-            </div>
+            <a href="/resume.pdf" download className="downloadicon text-decoration-none">
+                <GoDownload className="d-icon" />
+                <span className="download-text">Download Resume</span>
+            </a>
 
             <div className='whatsappicon' onClick={openclosewhatsapp}>
-                <FaWhatsapp  className="w-icon img-fluid" alt="icon"/>
+                <FaWhatsapp className="w-icon img-fluid" alt="icon" />
                 {whatsappOpen && (
                     <div className="whatsapp-container">
                         <div className="w-box">

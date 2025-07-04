@@ -19,7 +19,7 @@
     
 } 
 .cable-buttons .btn.active-btn {
-  background-color: rgb(59, 110, 59) ;
+  background: linear-gradient(90deg, #2e3195, #3f54aa, #4c5f84);
   color: white ;
   box-shadow: none; 
 }

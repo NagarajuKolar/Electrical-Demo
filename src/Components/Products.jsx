@@ -1,5 +1,5 @@
 import React from 'react'
-import bannerimg from '../assets/prodban.avif'
+import bannerimg from '../assets/about22.png'
 import aboutimg from '../assets/about2image.jpg'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'

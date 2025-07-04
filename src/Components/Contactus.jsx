@@ -188,8 +188,8 @@ function Contactus() {
                 </div>
             </div>
 
-            <h5 className='text-center  text-muted mt-4'>AmpTek <span className='text-warning'>Industries</span>  is the market leader in the Supplier of Electrical Materials.
-                Our setup is situated in Hyderabad.</h5>
+            <h5 className='text-center  text-muted mt-4'>  FitHub Pro <span className='text-warning'>Gear</span> is a leading provider of premium Fitness & Gym Equipment.
+                Based in Hyderabad, we empower your workouts with strength and innovation.</h5>
 
             <div className="container mt-5">
                 <div className="row">
@@ -320,10 +320,9 @@ function Contactus() {
                 </div>
             }
             <div className='mt-4'>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.2875749038!2d78.39170874169413!3d17.471251903585372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb913cfd05700f%3A0x4a628d564e87d774!2s630%20LIG%20Flats%20Venture%202!5e0!3m2!1sen!2sin!4v1750847688810!5m2!1sen!2sin"
-                    style={{ width: '100%', height: '550px' }}
-                    allowFullScreen="" loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15205.050572651295!2d77.45667074689217!3d17.685048682057694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcecb78149d0b59%3A0xc766c8061aa57ede!2sMadgi%2C%20Telangana!5e0!3m2!1sen!2sin!4v1751636334403!5m2!1sen!2sin"
+                    style={{ width: '100%', height: '500px' }}
+                    allowFullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
 

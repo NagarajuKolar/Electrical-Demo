@@ -83,7 +83,7 @@ background-color: #012269;
 
 .active-btn,
 .active-btn:hover{
-   background-color: green;
+   background: linear-gradient(90deg, #d26221, #d66524, #cc9132);
   color: white;
 }
 
