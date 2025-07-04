@@ -18,7 +18,6 @@ import service1 from '../assets/service1.jpeg'
 import service2 from '../assets/service22.webp'
 import service3 from '../assets/service3.jpeg'
 import client1 from '../assets/dec.webp'
-
 import client3 from '../assets/MB.png'
 import client4 from '../assets/nike.png'
 import client5 from '../assets/adidas.png'
