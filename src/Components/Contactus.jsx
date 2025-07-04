@@ -247,15 +247,15 @@ function Contactus() {
 
                     <div className="col-md-6 col-sm-12 mt-2 fade-content">
                         <h3 className='mb-4'>
-                            <span className='text-primary'>AmpTek</span> <span className='text-warning'>Industries</span>
+                            <span className='text-primary'>FitHub Pro</span> <span className='text-warning'>Gear</span>
                         </h3>
                         <div className=' adress d-flex '>
                             <div>
                                 <h5> Postal Address</h5>
                                 <h6>
-                                    B8/714, Lig Venture-2, 4th Phase,<br />
-                                    KPHB Colony, Kukatpally,<br />
-                                    Hyderabad, Telangana-500085
+                                    H.No :28,Madgi<br />
+                                    Zaheerabad,Sangareddy<br />
+                                    Hyderabad Telangana-502221
                                 </h6>
                             </div>
                             <div className='phone'>

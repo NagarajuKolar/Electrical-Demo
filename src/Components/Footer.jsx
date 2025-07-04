@@ -41,9 +41,9 @@ function Footer() {
                 rel="noopener noreferrer"
                 style={{ textDecoration: 'none', color: 'inherit' }}
               >
-                B8/714, Lig Venture-2, 4th Phase,<br />
-                KPHB Colony, Kukatpally,<br />
-                Hyderabad, Telangana-500085
+                H.No :28,Madgi<br />
+                Zaheerabad,Sangareddy<br />
+                Hyderabad Telangana-502221
               </a>
             </div>
 
