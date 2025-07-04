@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import '../CSS/Home.css'
 import bannerimg from '../assets/banner1.png'
-import aboutimg from '../assets/aboutban33.png'
+import aboutimg from '../assets/aboutban33.jpg'
 import { useState } from 'react'
 
 import { Link } from 'react-router-dom'
