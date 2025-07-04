@@ -18,14 +18,14 @@ import service1 from '../assets/service1.jpeg'
 import service2 from '../assets/service22.webp'
 import service3 from '../assets/service3.jpeg'
 import client1 from '../assets/dec.webp'
-import client2 from '../assets/cult.svg'
+
 import client3 from '../assets/MB.png'
 import client4 from '../assets/nike.png'
 import client5 from '../assets/adidas.png'
 import client6 from '../assets/gold.svg'
 import client7 from '../assets/reebok.jpeg'
 import client8 from '../assets/yogo.png'
-import client9 from '../assets/fitness.png'
+import client2 from '../assets/fitness.png'
 
 
 function Home() {
